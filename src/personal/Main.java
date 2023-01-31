@@ -11,11 +11,11 @@ import personal.views.ViewUser;
 public class Main {
 
     public static void main(String[] args) {
-        FileOperation fileOperation = new FileOperationImpl("users.txt");
+        FileOperation fileOperation = new FileOperationImpl("MyUsers.txt");
         Repository repository = new RepositoryFile(fileOperation);
         TelephoneValidator validator = new TelephoneValidator();
         UserController controller = new UserController(repository,validator);
-        ViewUser view = new ViewUser(controller, validator);
+        ViewUser view = new ViewUser(controller, validator, repository);
         view.run();
     }
 }

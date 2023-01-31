@@ -18,7 +18,6 @@ public class User {
     }
 
 
-
     public String getId() {
         return id;
     }
@@ -53,6 +52,6 @@ public class User {
 
     @Override
     public String toString() {
-        return String.format("Идентафикатор: %s Имя: %s; Фамилия: %s; Телефон: %s", id, firstName, lastName, phone);
+        return String.format("Identifier: %s| First Name: %s; Last Name: %s; Phone: %s", id, firstName, lastName, phone);
     }
 }
