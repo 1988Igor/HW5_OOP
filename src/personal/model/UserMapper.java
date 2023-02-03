@@ -10,9 +10,9 @@ public class UserMapper {
 
     public User map(String line) {
         String[] lines = line.split(";");
-        if(lines.length<4){
+        if (lines.length < 4) {
             return null;
         }
-        return new User(lines[0] ,lines[1] ,lines[2], lines[3]);
+        return new User(lines[0], lines[1], lines[2], lines[3]);
     }
 }
